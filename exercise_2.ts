@@ -54,4 +54,14 @@ function sumNumberOfOneToN(theNumber : number){
 console.log(sumNumberOfOneToN(5));
 console.log(sumNumberOfOneToN(3));
 
+// -------------------------- exercise find factorial of number
 
+function findFactorial(theNumber : number){
+    let result : number = 1;
+    for(let i : number = 1; i <= theNumber; i++){
+        result *= i;
+    }
+    return result;
+}
+
+console.log(findFactorial(4));
