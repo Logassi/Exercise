@@ -30,15 +30,28 @@ function isItPrimeNumber(theNumber : number){
 }
 
 console.log(isItPrimeNumber(-3));
-console.log(isItPrimeNumber(1));
-console.log(isItPrimeNumber(2));
-console.log(isItPrimeNumber(3));
-console.log(isItPrimeNumber(4));
-console.log(isItPrimeNumber(5));
+// console.log(isItPrimeNumber(1));
+// console.log(isItPrimeNumber(2));
+// console.log(isItPrimeNumber(3));
+// console.log(isItPrimeNumber(4));
+// console.log(isItPrimeNumber(5));
 console.log(isItPrimeNumber(6));
 console.log(isItPrimeNumber(7));
-console.log(isItPrimeNumber(8));
-console.log(isItPrimeNumber(9));
-console.log(isItPrimeNumber(10));
+// console.log(isItPrimeNumber(8));
+// console.log(isItPrimeNumber(9));
+// console.log(isItPrimeNumber(10));
+
+// -------------------------- exercise check the sum number of 1 to N
+
+function sumNumberOfOneToN(theNumber : number){
+    let result : number = 0;
+    for(let i : number = 1; i <= theNumber; i++){
+        result += i;
+    }
+    return result;
+}
+
+console.log(sumNumberOfOneToN(5));
+console.log(sumNumberOfOneToN(3));
 
 
