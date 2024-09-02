@@ -65,3 +65,29 @@ function findFactorial(theNumber : number){
 }
 
 console.log(findFactorial(4));
+console.log(findFactorial(6));
+
+// -------------------------- exercise print fibonacci number of N
+function findFibonacci(theNumber : number){
+    if(theNumber === 0){
+        return 0
+    }
+
+    if(theNumber === 1){
+        return 1;
+    }
+
+    let base_zero : number = 0;
+    let base_one : number = 1;
+   let temp : number = 0;
+
+    for(let i : number = 1; i <= theNumber; i++){
+        temp = base_one;        
+        base_one = base_zero + base_one; 
+        base_zero = temp;
+    }
+
+    return base_zero;
+}
+
+console.log(findFibonacci(15));
