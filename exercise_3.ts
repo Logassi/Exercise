@@ -8,8 +8,6 @@ function displayMultiplicationTable(theNumber : number){
 // displayMultiplicationTable(9);
 
 // -------------------------- exercise check palindrome
-
-
 function isItPalindrome(theString : string){
     let pointingBegining : number  = 0;
     let pointingEnd : number = theString.length-1; 
@@ -35,3 +33,22 @@ function isItPalindrome(theString : string){
 console.log(isItPalindrome("hesoseh"));
 console.log(isItPalindrome("madam"));
 console.log(isItPalindrome("aezakmi"));
+
+
+// -------------------------- exercise convert centimeter to kilometer
+const aKilometer : number = 100000;
+function cmToKm(theCentimeter : number){
+    return theCentimeter/aKilometer;
+}
+
+console.log(cmToKm(170));
+console.log(cmToKm(100000));
+
+// -------------------------- exercise  format number as currency (IDR)
+function formatNumberAsCurrency(theNumber : number){ 
+    // This function is not done yet, since the output should be "Rp. 1.000,00" not "Rp. 1000,00" 
+    // I am thinking using for loop from the back of number and if it meet 3 digit, the code give "." period as a separator
+    return "Rp. " + theNumber + ",00"
+}
+
+console.log(formatNumberAsCurrency(1000));
