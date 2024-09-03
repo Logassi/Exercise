@@ -64,6 +64,7 @@ function convertDaysToYearsMonthsDays(totalDays: number) {
 let totalDays1 = 400;
 let result1 = convertDaysToYearsMonthsDays(totalDays1);
 console.log(`${totalDays1} days → ${result1.years} year(s), ${result1.months} month(s), ${result1.days} day(s)`);
+console.log(totalDays1 + " -> " + result1.years + " year(s) -> " + result1.months + " month(s) -> " + result1.days + " day(s)") ;
 
 let totalDays2 = 366;
 let result2 = convertDaysToYearsMonthsDays(totalDays2);
